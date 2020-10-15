@@ -1,0 +1,6 @@
+CREATE TABLE [dbo].[itemMaster]
+(
+[id] [int] NOT NULL IDENTITY(1, 1),
+[docentry] AS (right('000000'+CONVERT([nvarchar](10),[id],0),(6)))
+) ON [PRIMARY]
+GO
